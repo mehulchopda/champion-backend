@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
     client: 'mysql',
     connection: {
       host: env('DATABASE_HOST', 'localhost'),
-      port: env.int('DATABASE_PORT', 3306),
+      port: env.int('DATABASE_PORT', '8889'),
       database: env('DATABASE_NAME', 'strapi'),
       user: env('DATABASE_USERNAME', 'strapi'),
       password: env('DATABASE_PASSWORD', 'strapi'),
